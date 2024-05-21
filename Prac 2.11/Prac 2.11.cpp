@@ -31,10 +31,10 @@ string ArrayToString(const T(&arr)[N])
 // Шаблонная функция для вычисления суммы гармонического ряда до указанного числа для числа любого типа данных.
 template<typename T>
 T HarmonicSum(T n) {
-    T sum = 0.0;
+    T sum{ 0 };
     for (T i = 1; i <= n; ++i)
     {
-        sum += 1.0 / static_cast<double>(i);
+        sum += 1.0 / i;
     }
     return sum;
 }

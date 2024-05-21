@@ -32,10 +32,8 @@ string ArrayToString(const T(&arr)[N])
 template<typename T>
 T HarmonicSum(T n) {
     T sum{ 0 };
-    for (T i = 1; i <= n; ++i)
-    {
-        sum += 1.0 / i;
-    }
+    for (T i = 1; i <= n; ++i) sum += 1.0 / i;
+
     return sum;
 }
 
